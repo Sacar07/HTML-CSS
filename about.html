@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      h1 {
+        text-align: center;
+      }
+      /* Descendent selector */
+      header li {
+        display: inline;
+        padding: 8px;
+        padding-left: 0px;
+      }
+
+      #name {
+        background-color: greenyellow;
+        text-decoration: underline;
+      }
+      /* #logo{
+        text-transform: uppercase;
+      } */
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .text {
+        color: red;
+      }
+      .box {
+        border: 1px solid;
+        padding: 16px;
+        margin: 20px 100px 30px 100px;
+      }
+      header a{
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+      }
+      footer a{
+        text-decoration: none;
+      }
+      .about{
+        text-decoration: underline;
+      }
+    
+    </style>
+    <link rel="stylesheet" href="./CSS/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html" class="active">About us</a></li>
+          <li>
+            <a href="./courses/current/current-courses.html">Current courses</a
+            >&nbsp;
+          </li>
+          <li>
+            <a href="./courses/upcoming/upcoming-courses.html"
+              >Upcoming Courses</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="uppercase">About <span class="text">us...</span></h1>
+
+    <span>Welcome</span>
+    <span>to</span>
+    <span id="logo" class="uppercase text"> Mindrisers</span>
+
+    <p>
+      these are courses ... Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Pariatur animi, nulla accusamus odit asperiores quidem reprehenderit
+      modi fuga laborum at ex corrupti quibusdam aspernatur earum sequi in.
+      Doloribus, laboriosam magnam!
+    </p>
+    <p class="box">
+      these are courses ... Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Pariatur animi, nulla accusamus odit asperiores quidem reprehenderit
+      modi fuga laborum at ex corrupti quibusdam aspernatur earum sequi in.
+      Doloribus, laboriosam magnam!
+    </p>
+
+    <h2>Element Types</h2>
+    <ul>
+      <li>block</li>
+      <li>inline</li>
+      <li>inline-block</li>
+    </ul>
+    <h2>Our team</h2>
+    <ul>
+      <li>css&nbsp;<span id="name" class="uppercase">Mr. Ram</span></li>
+      <li class="uppercase text">Mr. Ram</li>
+      <li class="uppercase">Mr. Ram</li>
+      <li>Mr. Hari</li>
+      <li>Mr. Hari</li>
+    </ul>
+    <footer>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.youtube.com" target="_blank">Youtube</a> <br />
+    </footer>
+  </body>
+</html>

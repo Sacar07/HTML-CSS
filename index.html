@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web development</title>
+    <style>
+      /* comment ctrl + / */
+     *{
+      margin: 0px;
+      padding: 0px;
+     }
+     header li {
+        display: inline;
+        padding: 5px;
+        padding-left: 0%;
+      }
+       header a{
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+      }
+ table,td,th {
+  border:1px solid black;
+}
+table{
+  border-collapse: collapse;
+}
+ h1 {
+    color:blueviolet;
+    text-align: center;
+  }
+
+  h2{
+    color: red;
+    text-decoration: underline;
+    padding: 10px;
+  }
+
+  p{
+    text-transform: capitalize;
+    padding: 10px;
+  }
+
+  /* li{
+    text-decoration: underline;
+  } */
+  img{
+    height: 100px;
+    padding: 10px;
+  }
+  .rotate-text{
+      /* writing-mode: tb; */
+      transform: rotate(270deg); 
+  }
+  header ul{
+    padding: 0%;
+    margin: 0%;
+  }
+   
+      .home{
+        text-decoration: underline;
+      }
+      table{
+        /* To center a table */
+        margin-left: auto;
+        margin-right: auto; 
+      }
+      li{
+        padding: 5px;
+        padding-left: 20px;
+      }
+      .active{
+        color: red;
+      }
+
+</style>
+<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li>
+            <a href="./contact.html">Contact us</a
+            >&nbsp;
+          </li>
+          <li>
+            <a href="./courses/upcoming/upcoming-courses.html"
+              >Upcoming Courses</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Hyper Text Markup Language</h1>
+    <p>
+      web development is... Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Labore, a id doloremque mollitia expedita at, omnis quos hic dolorum
+      atque consequuntur optio, explicabo sequi! Recusandae ad officia
+      exercitationem nam rerum.
+    </p>
+    <h2>Element</h2>
+    <p>
+      elements/tags are... Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Nesciunt ex itaque optio quis facilis expedita mollitia porro, error
+      sint iste debitis eum. Facilis eum adipisci provident laborum modi,
+      dolorum magni.
+    </p>
+    <h2>Attribute</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, eum!</p>
+    <a href="https://www.google.com" target="_blank"
+      ><img
+        src="./fender-1969-fender-stratocaster-3-tone-sunburst.webp"
+        alt="fender"
+        style="height: 120px"
+      />
+    </a>
+    <br />
+    <table>
+      <thead>
+        
+        <tr>
+          <th>Course</th>
+          <th>Duration</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+        </thead>
+        <tbody>
+
+          <td>MERN</td> 
+          <td>3 months</td>
+          <td>Rs. 15,900</td>
+        </tr>
+        <tr>
+          <td>Django</td>
+          <td>2.5 months</td>
+          <td>Rs.12,000</td>
+        </tr>
+        <tr>
+          <td>Graphics design</td>
+          <td>2 months</td>
+          <td>Rs.10,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mateus</td>
+        <td>Asato</td>
+        <td>masato@gmail.com</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>CSS</h2>
+    <ul><li>inline css</li>
+      <li>internal css</li>
+      <li>external css</li></ul>
+      <img src="https://lthub.ubc.ca/files/2021/06/GitHub-Logo.png" alt="GitHub-Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="node js logo">
+      <img src="./assets/image/asa.jpg" alt="mateus Asato">
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">course</th>
+            <th>price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="3" class="rotate-text">current</th>
+            <td>MERN</td>
+            <td>Rs.15,000</td>
+          </tr>
+          <tr>
+            <td>Django</td>
+            <td>Rs.15,999</td>
+          </tr>
+          <tr><td>QA</td>
+          <td>Rs.10,000</td></tr>
+          <tr>
+            <th rowspan="4"class="rotate-text">upcoming
+            </th>
+            <td>ML</td>
+            <td>Rs.15,999</td>
+            <tr>
+              <Td>AI</Td>
+              <td>Rs.17,000</td>
+            </tr>
+            <tr>
+              <td>Ethical hacking</td>
+              <td>Rs.10,000</td>
+              <tr>
+                <td>Data science </td>
+                <td>Rs.10,500</td>
+              </tr>
+            </tr>
+          </tr>
+          </tbody>
+      </table>
+    
+    <footer>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.youtube.com" target="_blank">Youtube</a> <br />
+    </footer>
+    </body>
+   
+    </html>
+    
