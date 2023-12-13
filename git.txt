@@ -1,0 +1,17 @@
+//one-time-setup for each project
+1. git init
+2. git remote add origin https://github.com/sacar07/HTML-CSS
+
+*****github.com/sacar07/HTML-CSS //if no http
+    to change > git remote set-url origin https://github.com/sacar07/HTML-CSS*****
+
+    2.1 To check step 2
+        git remote -v
+
+
+
+// regular codes
+1. git status //optional // to compare codes online and local
+2. git add .
+3. git commit -m "html-css"
+4. git push
