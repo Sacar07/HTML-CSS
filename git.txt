@@ -17,5 +17,6 @@
 4. git push
 
 //optional
-git restore .
-git 
+    git restore .
+    git clean -f -d
+    git pull
