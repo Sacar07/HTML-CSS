@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+li {
+list-style: none;
+height: 100px;
+border: 1px solid black;
+width:100px;
+}
+.static{
+    position: static ;
+}
+.relative{
+    position: relative;
+    top: 10px;
+    left: 50px
+} 
+ .absolute{
+    position: absolute;
+    background-color: antiquewhite;
+    right: 0;
+    top: 0;
+} 
+
+.fixed{
+    position: fixed;
+    background-color: aqua;
+    right: 0;
+    top: 100px;
+}
+.sticky{
+    position: sticky;
+
+}
+.description{
+    width: 10%;
+}
+
+.card{
+    width: 50%;
+    height: 500px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.cirles{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="box static">static</li>
+        <li class="box relative">relative</li>
+        <li class="box absolute">absolute</li>
+        <li class="box fixed">fixed</li>
+        <li class="box sticky">sticky</li>
+    </ul>
+    <div class="card box">
+        <p>Request a callback</p>
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle circle-sm"></div>
+        </div>
+    </div>
+    <div class="description">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste autem beatae illum suscipit, non optio placeat! Alias minima aspernatur, neque laboriosam, porro quibusdam nostrum, mollitia repellat praesentium repellendus fugiat!
+            </p>
+        </div>
+</body>
+</html>

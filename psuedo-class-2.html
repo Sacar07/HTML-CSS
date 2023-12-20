@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        .child:nth-child(4){
+            background-color: rebeccapurple;
+        }
+        header ul{
+            display: flex;
+            list-style: none;
+            padding: 0;
+            gap: 1rem;
+        }
+        header a{
+            color: black;
+            text-decoration: none;
+        }
+        header a:hover{
+            color: red;
+        }
+        /* psuedo element */
+         .star::after {
+        content: "*";
+        color: red;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="parent">
+        <div class="child">child-1</div>
+        <div class="child">child-2</div>
+        <div class="child">child-3</div>
+        <div class="child fourth">child-4</div>
+        <div class="child">child-5</div>
+        <div class="child">child-6</div>
+    </div>
+   
+
+
+    <hr>
+    <form>
+        <label for="" class="star">Name</label>
+        <input type="text">
+        <br>
+        <label for="">Phone</label>
+        <input type="text" name="" id="">
+        <br>
+        <label for=""class="star">Password</label>
+        <input type="password">
+        <br>
+        <label for=""class="star"> Confirm Password</label>
+        <input type="password">
+        <br>
+        <button>submit</button>
+
+    </form>
+
+
+</body>
+</html>

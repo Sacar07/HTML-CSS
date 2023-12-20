@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flex</title>
+    <style>
+        .parent{ /*flexbox*/
+            /* border: 1px solid; */
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            /* flex-start center flex-end justify-between */
+
+        }
+        .child{  /*flexitem*/
+            /* border: 1px solid; */
+            /* padding: 1rem; */
+            height: 20px;
+            justify-content: space-between;
+        }
+       
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+        }
+        #bold{
+            font-weight: bold;
+        }
+        button{
+            color: orangered;
+            border-radius: 100px;
+            border-color: orangered;
+
+        }
+        .child-1{
+            display: flex;
+            align-items: flex-start;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
-    bgdfsbfjdf
+    <nav>
+    <div class="parent">
+
+        <!--emmet shortcut .child*3>{child-$} -->
+
+        <div class="child-1">
+            <img src="./assets/image/Standard Collection 27logo.svg" alt="logo">
+            <span>Lasles </span>
+            <span id="bold">VPN</span>
+        </div>
+        <div class="child" style="width: 800px;"><ul>
+            <li>
+                About
+            </li>
+            <li>
+                Features
+            </li>
+            <li>
+                pricing
+            </li>
+            <li>
+                Testimonials
+            </li>
+            <li>
+                Help
+            </li>
+        </ul></div>
+        <div class="child" style="width: 150px;"><ul>
+            <li>sign in</li>
+            <li> <button>sign up</button></li>
+        </ul></div>
+
+    </div>
+    
 </body>
 </html>
