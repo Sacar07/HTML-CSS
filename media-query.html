@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .project{
+            border: 1px solid;
+            padding: 1rem;
+            width: 25%;
+        }
+      
+        .projects{
+            display: flex;
+            flex-wrap: wrap;
+        }
+         @media (max-width:1279px) {
+            .project{
+                width: 33.33%;
+            }
+       }
+       @media (max-width:1023px) {
+            .project{
+                width: 50%;
+            }
+       }
+       @media (max-width:767px) {
+            h1{
+                text-align: center;
+            }
+            .project{
+                width: 100%;
+            }
+            .project h2{
+                text-align: center;
+            }
+            /* body{
+                background-color: antiquewhite;
+            } */
+       }
+    </style>
+</head>
+<body>
+    <h1>Projects</h1>
+    <hr>
+    <div class="projects">
+
+    <div class="project">
+        <h2>Git</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quia amet voluptates quae dolore id nemo blanditiis atque voluptatibus quidem error quisquam unde dolorem dolores voluptate quaerat architecto, iusto et.</p>
+</div>
+    <div class="project">
+        <h2>JavaScript</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quia amet voluptates quae dolore id nemo blanditiis atque voluptatibus quidem error quisquam unde dolorem dolores voluptate quaerat architecto, iusto et.</p>
+</div>
+    <div class="project">
+        <h2>Node.js</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quia amet voluptates quae dolore id nemo blanditiis atque voluptatibus quidem error quisquam unde dolorem dolores voluptate quaerat architecto, iusto et.</p>
+</div>
+    <div class="project">
+        <h2>React</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quia amet voluptates quae dolore id nemo blanditiis atque voluptatibus quidem error quisquam unde dolorem dolores voluptate quaerat architecto, iusto et.</p>
+</div>
+    <div class="project">
+        <h2>Next JS</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quia amet voluptates quae dolore id nemo blanditiis atque voluptatibus quidem error quisquam unde dolorem dolores voluptate quaerat architecto, iusto et.</p>
+</div>
+ <div class="project">
+        <h2>Mongo DB</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quia amet voluptates quae dolore id nemo blanditiis atque voluptatibus quidem error quisquam unde dolorem dolores voluptate quaerat architecto, iusto et.</p>
+</div>
+ <div class="project">
+        <h2>UI/UX</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quia amet voluptates quae dolore id nemo blanditiis atque voluptatibus quidem error quisquam unde dolorem dolores voluptate quaerat architecto, iusto et.</p>
+</div>
+ <div class="project">
+        <h2>Express</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quia amet voluptates quae dolore id nemo blanditiis atque voluptatibus quidem error quisquam unde dolorem dolores voluptate quaerat architecto, iusto et.</p>
+</div>
+
+    </div>
+    
+</body>
+</html>
