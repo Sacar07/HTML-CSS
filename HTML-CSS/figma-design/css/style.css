@@ -1,0 +1,114 @@
+    /* 
+    2xl:1536px   
+    xl:1280px   56px  
+    lg:1024px   47px *FROM TYPESCALE.COM*
+    md:768px    39px
+    sm: 576/640 32px // mobile landscape
+    27px // below 576px or 640px = mobile
+    */
+
+        nav{
+            padding-top: 27px;
+            display: flex;
+            justify-content: space-between;
+            text-transform: capitalize;
+        }
+        
+    
+        .logo-wrapper{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 99999;
+        }
+        .logo{
+            fill: #F53838;
+        }
+
+        .hamburger{
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+        }
+         
+        .drawer{
+            position: fixed;
+            background-color: orange;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding: 2rem;
+            width: 50vw;
+            transform: translateX(100%);
+            transition: all .5s;
+        }
+
+        .drawer.open{
+            transform: translateX(0%);
+        }
+       .close{
+        font-size: 2rem;
+        cursor: pointer;
+       }
+       .drawer a:hover{
+        color: #F53838;
+       }
+
+       nav button{
+        text-transform: capitalize;
+       }
+       .empty{
+        height: 100vh;
+        width: 50vw;
+        position: absolute;
+        top: 0px;
+       }
+
+        @media (min-width:768px){
+            nav{
+                padding-top: 39px;
+            }
+        }
+        @media (min-width:1024px){
+            nav{
+                padding-top: 47px;
+            }
+            .hamburger{
+                display: none;
+            }
+            .drawer{
+                flex-grow: 1;
+                position: static;
+                transform: none;
+                background-color: transparent;
+                display: flex;
+                padding: 0;
+                width: auto;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .close{
+                display: none;
+            }
+
+            .drawer ul{
+                flex-grow: 1;
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+        @media (min-width:1280px){
+            nav{
+                padding-top: 56px;
+            }
+        }
+        
+        @media (min-width:1536px){
+            nav{
+                padding-top: 56px;
+            }
+        }
+        

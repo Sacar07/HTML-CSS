@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div.parent{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+        }
+        div.parent:hover .box2{
+            background-color: pink !important;
+            transform: ;
+            
+        }
+        .box{
+        height:100px;
+        border: 1px solid;
+        width: 100px;
+        }
+        section{
+            background-color: red;
+        }
+        /* 001 id class tag*/ 
+        section{
+            background-color: blue;
+        }
+        .child{
+            background-color: black;
+        }
+        
+        /* 002 */
+        div section{
+            background-color: red;
+        }
+        /* 100 specifity score greater so section ma deko bg color lagena id ma deko lagyo*/
+
+     #child-2{
+            background-color: aqua;
+        }
+
+        div section{
+            background-color: blue !important;
+        }
+
+        section{
+            background-color: blanchedalmond !important;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Specifity Score</h2>
+    <h2>tags < class < id </h2>
+    <div class="parent">
+        <section class="child box"></section>
+        <section class="box box2" id="child-2" style="background-color: blueviolet;"></section>
+    </div>
+</body>
+</html>
