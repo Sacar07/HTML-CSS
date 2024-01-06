@@ -17,14 +17,15 @@
 </svg>
         <span>LaslesVPN</span>
         </div>
-        <img src="./assets/iconmonstr-menu-right-lined.svg" alt="" class="hamburger" onclick='document.getElementById("drawer").classList.add("open")'/>
+        <img src="./assets/iconmonstr-menu-right-lined.svg" alt="" class="hamburger" onclick='document.getElementById("drawer").classList.add("open"); document.getElementById("empty").classList.add("shade")'/>
         <div class="drawer" id="drawer">
-            <span onclick='document.getElementById("drawer").classList.remove("open")' class="close">X</span>
+            <span onclick='document.getElementById("drawer").classList.remove("open");document.getElementById("empty").classList.remove("shade")' class="close">X</span>
         <ul class="">
             <li><a href="#">About</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Help</a></li>
         </ul>
         <div class="">
 
@@ -34,6 +35,6 @@
         </div>
         </nav>
     </header>
-    <div class="empty" onclick='getElementById("drawer").classList.remove("open")'></div>
+    <div class="empty" id="empty" onclick='getElementById("drawer").classList.remove("open");document.getElementById("empty").classList.remove("shade")'></div>
 </body>
 </html>

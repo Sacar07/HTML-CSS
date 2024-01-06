@@ -43,6 +43,12 @@
             transition: all .5s;
         }
 
+        .empty.shade{
+             background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px); 
+            transition: all .5s;
+        }
+
         .drawer.open{
             transform: translateX(0%);
         }
@@ -111,4 +117,5 @@
                 padding-top: 56px;
             }
         }
+
         
