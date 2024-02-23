@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>products</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <style>
+      .flex {
+        display: grid;
+      }
+
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>List of products</h1>
+    <hr />
+    <ul id="display" class="flex">
+      <!-- <img src=""></img> -->
+      <!-- <li>abc</li>
+        <li>acs</li>
+        <li>ss</li> -->
+    </ul>
+  </body>
+
+  <script>
+    function fetchList() {
+      axios.get("https://dummyjson.com/products").then((res) => {
+        console.log(res.data.products);
+
+        products = res.data.products;
+        let output = "";
+
+        products.forEach((el) => {
+          console.log(el.title);
+
+          output += `<img src = "${el.thumbnail}"<li><br>${el.title}</li>`;
+
+          document.getElementById("display").innerHTML = output;
+        });
+      });
+    }
+    fetchList();
+  </script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopee</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 50%;
+    }
+    td, th {
+        border: 1px solid black; /* Apply border to each cell */
+        padding: 8px; /* Optional: Add padding for better spacing */
+    }
+</style>
+</head>
+<body>
+    
+    <form onsubmit="addList(event)">
+    <input type="text" placeholder="title" id="title">
+    <input type="number" placeholder="quantity" id="number">
+    <button>submit</button>
+        </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="table-data">
+           
+           <!-- <tr> <td>apple</td>
+            <td>10</td>
+            </tr>
+           <tr> <td>apple</td>
+            <td>10</td>
+            </tr> -->
+            
+            
+        </tbody>
+    </table>
+
+
+    <script>
+
+        let list = [];
+        function addList(event){
+            event.preventDefault();
+            let titleData = document.getElementById("title").value; 
+            let numberData = document.getElementById("number").value ;
+
+            list.push({
+                name: `${titleData}`,
+                quantity: `${numberData}`
+            })
+
+            console.log(list);
+
+            output = "";
+            list.forEach((el,idx) => {
+                output += `<tr><td>${el.name}</td> 
+                    <td>${el.quantity}</td></tr>`
+            })
+
+            document.getElementById("table-data").innerHTML = output;
+
+
+
+        }
+    </script>
+
+
+</body>
+</html>
